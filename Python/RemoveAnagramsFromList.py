@@ -31,6 +31,8 @@ def isAnagramCh(word1, word2):
         char_count[ch] = char_count.get(ch, 0) + 1
     for ch in word2:
         char_count[ch] = char_count.get(ch, 0) - 1
+    for key in all_char.keys():
+        all_char[key] = abs(all_char[key])
     return sum(char_count.values()) == 0
 
 
