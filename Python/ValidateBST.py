@@ -15,8 +15,8 @@ class TreeNode(object):
     self.left = None
     self.right = None
 
-# use a stack to keep the node and the related most lowest/highest value
-# DFS/BFS can be used for traversing the tree
+# use a stack to keep the node and the related most lowest/highest values
+# DFS/BFS is used for traversing the tree
 
 class BST(object):
   
@@ -31,6 +31,6 @@ class BST(object):
         return False
       if node.left:
         stack.append((node.left, lower, node.val)
-        stack.append(node.right, node.val, upper)
+        stack.append((node.right, node.val, upper))
   return True     
   
