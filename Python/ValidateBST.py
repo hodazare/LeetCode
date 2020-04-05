@@ -30,7 +30,7 @@ class BST(object):
       if node.val <= lower or node.val >= upper:
         return False
       if node.left:
-        stack.append((node.left, lower, node.val)
+        stack.append((node.left, lower, node.val))
         stack.append((node.right, node.val, upper))
   return True     
   
