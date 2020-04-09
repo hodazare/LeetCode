@@ -27,7 +27,7 @@ Three methods can be used:
 #         self.right = None
 
 class Solution(object):
-Approach 2: Morris traversal
+   
     def preorderTraversalMorris(self, root):
         if not root:
             return None
@@ -72,4 +72,4 @@ Approach 2: Morris traversal
         return output
         
         def preorderTraversalRecursion(self, root):
-          return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right) if root else []
+         return [root.val] + self.preorderTraversal(root.left) + self.preorderTraversal(root.right) if root else []
