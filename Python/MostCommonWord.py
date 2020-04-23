@@ -14,7 +14,7 @@ Output: "ball"
 
 """
 import string
-def mostCommonWord(self, paragraph, banned):
+def mostCommonWord(paragraph, banned):
 
     all_words = {}
     # cleaning
