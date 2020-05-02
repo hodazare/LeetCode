@@ -21,7 +21,7 @@ Input:
 00011
 
 Output: 3
-"""
+
 Solution:
 using DFS to traverse the nodes and set each visited node to 0.
 
